@@ -8,7 +8,7 @@ class GridItem {
     int width;
     int height;
     public:
-    static int itemCount = 0;
+    static int itemCount;
     GridItem(int x = 0, int y = 0, int width = 0, int height = 0)  {
         position = std::make_tuple(x,y);
         this -> width = width;
