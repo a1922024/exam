@@ -28,10 +28,10 @@ class GridItem {
         return height;
     }
     int getActiveGridItemCount() {
-        return itemCount;
+        return GridItem::itemCount;
     }
     virtual ~GridItem(){
-        itemCount--;
+        GridItem::itemCount--;
     }
 };
 #endif
