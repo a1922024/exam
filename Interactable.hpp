@@ -16,8 +16,8 @@ class Interactable: public GridItem {
         this -> height = height;
         interactableCount++;
     } 
-    virtual bool interact(Explorer* player) = 0;
-    virtual InteractableType getType() = 0;
+    virtual bool interact(Explorer* player) {return true} = 0;
+    virtual InteractableType getType() {return true} = 0;
     int getActiveInteractableCount() {
         return interactableCount;
     }
