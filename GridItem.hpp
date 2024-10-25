@@ -34,5 +34,4 @@ class GridItem {
         itemCount--;
     }
 };
-GridItem::itemCount = 0;
 #endif
