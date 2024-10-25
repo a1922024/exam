@@ -1,14 +1,14 @@
-#ifndef GRIDITEM_H
-#define GRIDITEM_H
+#ifndef GRIDITEM_HPP
+#define GRIDITEM_HPP
 #include<tuple>
 
 class GridItem {
     protected:
-    static int itemCount;
     std::tuple<int, int> position;
     int width;
     int height;
     public:
+    static int itemCount;
     GridItem(int x = 0, int y = 0, int width = 0, int height = 0)  {
         position = std::make_tuple(x,y);
         this -> width = width;
@@ -33,7 +33,5 @@ class GridItem {
     virtual ~GridItem(){
         itemCount--;
     }
-
-
 };
 #endif
