@@ -18,7 +18,7 @@ class Exit: public Interactable {
         return false;
     }
     InteractableType getType() {
-        return EXIT;
+        return InteractableType::EXIT;
     }
     ~Exit() {
         interactableCount--;

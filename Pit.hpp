@@ -25,7 +25,7 @@ class Pit: public Interactable {
         }
     }
     InteractableType getType() {
-        return PIT;
+        return InteractableType::PIT;
     }
     ~Pit() {
         interactableCount--;
