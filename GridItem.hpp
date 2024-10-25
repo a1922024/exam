@@ -8,11 +8,11 @@ class GridItem {
     int width;
     int height;
     public:
+    static int itemCount;
     GridItem(int x = 0, int y = 0, int width = 0, int height = 0)  {
         position = std::make_tuple(x,y);
         this -> width = width;
         this -> height = height;
-        static int itemCount;
         itemCount++;
     }
     void setCoordinates(int x, int y) {
@@ -28,10 +28,10 @@ class GridItem {
         return height;
     }
     int getActiveGridItemCount() {
-        return GridItem::itemCount;
+        itemCount;
     }
     virtual ~GridItem(){
-        GridItem::itemCount--;
+        itemCount--;
     }
 };
 #endif
